@@ -24,7 +24,7 @@
     --brand-color-secondary: #FC4A1A;
 
     --ff-sans: 'Inter', system-ui, sans-serif;
-    
+
     --fw-base: 400;
     --fw-md: 500;
     --fw-bold: 800;
@@ -55,7 +55,9 @@ body {
     background-color: var(--bg-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     line-height: 1.2;
     color: var(--text-color-primary);
     font-weight: var(--fw-bold);
@@ -80,11 +82,9 @@ a {
 }
 
 a:hover {
-    background: linear-gradient(
-        90deg,
-        var(--brand-color-secondary) 0%,
-        var(--brand-color-primary) 100%
-    );
+    background: linear-gradient(90deg,
+            var(--brand-color-secondary) 0%,
+            var(--brand-color-primary) 100%);
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -95,7 +95,12 @@ ul[role="list"] {
     list-style: none;
 }
 
-@media (width >= 80em) {
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+@media (width >=80em) {
     :root {
         --fs-lg: 2rem;
         --fs-xl: 3rem;
