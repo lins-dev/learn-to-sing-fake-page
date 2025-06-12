@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,8 +9,11 @@
     <title>Zingen - Karaokê</title>
 
     <link rel="stylesheet" href="./styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container py-base">
@@ -42,13 +46,13 @@
     <section id="mobile-img">
         <div class="container">
             <img src="./assets/smartphones.png" alt="imagem com dois telefones">
-        </div>        
+        </div>
 
     </section>
 
     <section id="about">
         <div class="container even-columns py-xl items-center">
-           <div>
+            <div>
                 <header>
                     <strong>Conheça o app</strong>
                     <h2>O aplicativo perfeito para aprender a cantar</h2>
@@ -58,12 +62,12 @@
                     e manter as melodias das músicas. Dessa forma, temos o maior repertório musical
                     para Karaokê! Além disso, ao cantar, sua voz e afinação é comparada pelo
                     algoritmo permitindo uma avaliação precisa
-                    da sua performance te ajudando a melhorar seu canto. 
+                    da sua performance te ajudando a melhorar seu canto.
                 </p>
-           </div>
-           <div>
+            </div>
+            <div>
                 <img src="./assets/smartphones.png" class="desktop-only" alt="imagem com dois telefones">
-           </div> 
+            </div>
         </div>
     </section>
 
@@ -98,7 +102,7 @@
                     Seja para compartilhar com os amigos ou para acompanhar
                     sua evolução, nosso recurso de gravação de áudio
                     e vídeo permite que você
-                    aproveite a experiência ao máximo! 
+                    aproveite a experiência ao máximo!
                 </p>
             </div>
 
@@ -132,5 +136,61 @@
         </div>
     </section>
 
+    <section id="pricing">
+        <div class="container py-xl">
+            <header>
+                <strong>Planos e preços</strong>
+                <h2>Assine e tenha acesso ilimitado a todas as funcionalidades</h2>
+            </header>
+            <div class="cards even-columns items-center">
+
+                <div class="card py-lg px-lg">
+                    <h3>Básico</h3>
+                    <p>Baixe o app e comece a cantar agora mesmo!</p>
+                    <zin-pricing>Grátis</zin-pricing>
+                    <a href="#download" class="btn btn-md" aria-label="Baixar agora"></a>
+                    <div class="separator"></div>
+                    <ul role="list" class="grid gap-1">
+                        <li>Com anúncios</li>
+                        <li>Até 5 músicas por dia</li>
+                        <li>Cante apenas as músicas disponíveis no plano gratuito</li>
+                    </ul>
+                </div>
+
+                <div class="premium">
+                    <div class="card py-lg px-lg">
+                        <span>1 mês grátis</span>
+                        <h3>Premium</h3>
+                        <p>Ideal para quem já cansou de passar vergonha no Karaokê</p>
+                        <zin-pricing>R$ 24,90 <small>/mês</small></zin-pricing>
+                        <a href="#download" class="btn btn-md">Experimente de graça</a>
+                        <div class="separator"></div>
+                        <ul role="list" class="grid gap-1">
+                            <li>Sem interrupção de anúncios</li>
+                            <li>Cante quantas músicas quiser</li>
+                            <li>Cante todas as músicas da biblioteca</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card py-lg px-lg">
+                    <h3>Família</h3>
+                    <p>Para aquelas famílias que adoram se reunir pra cantar</p>
+                    <zin-pricing>R$ 21,90 <small>/mês por pessoa</small></zin-pricing>
+                    <a href="#download" class="btn btn-md" aria-label="Assinar agora"></a>
+                    <div class="separator"></div>
+                    <ul role="list" class="grid gap-1">
+                        <li>Sem interrupção de anúncios</li>
+                        <li>Cante quantas músicas quiser</li>
+                        <li>Cante todas as músicas da biblioteca</li>
+                    </ul>
+                    <small>Mínimo de 4 pessoas no plano família.</small>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
